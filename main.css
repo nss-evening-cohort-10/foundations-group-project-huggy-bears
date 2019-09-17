@@ -1,9 +1,14 @@
 body {
-    background-color: gainsboro;
+    background-color: black;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
 #mainHeader {
     font-family: 'Monoton', cursive;
     font-size: 70px;
+}
+
+.hite {
+    height: 530px;
 }

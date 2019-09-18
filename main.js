@@ -41,4 +41,23 @@ const prevTour = [
     city: 'Toronto, Canada', 
     date: 'August 2019' 
     }
-    ]
+    ];
+
+const prevTourCardBuilder = (arr) => {
+    let domString = '';
+    for (let i = 0; i < arr.length; i ++) {
+        const tour = arr[i];
+        domString += `
+        <div class="card multi" style="width: 18rem;">
+            <img src="${tour.image}" class="card-img-top" alt="${tour.city}">
+            <div class="card-body">
+                <h5 class="card-title">${tour.city}</h5>
+                <p class="card-text">${tour.date}</p>
+            </div>
+        </div>
+      `
+    }
+    printToDom('prevTour', domString);
+}
+
+prevTourCardBuilder(prevTour);

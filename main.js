@@ -21,15 +21,6 @@ const albums = [
        songs: ['test song1', 'test song 2','test song 3']
     }];
 
-
-
-  
-
-
-
-
-
-
-
-
-
+const printToDom = (divId, toPrint) => {
+document.getElementById(divId).innerHTML = toPrint;
+}

@@ -27,17 +27,17 @@ document.getElementById(divId).innerHTML = toPrint;
 
 const prevTour = [ 
     {
-    image: 'insert link', 
+    image: 'https://66.media.tumblr.com/834e49bf932ba8de2a8aa1ed80e081d0/tumblr_pwyb8q5oSO1uptadjo1_1280.jpg', 
     city: 'New York, New York', 
     date: 'July 2019' 
     },
     {
-    image: 'insert link', 
+    image: 'https://66.media.tumblr.com/7b17ac32dfaa8b7f213c004e7cc7cac3/tumblr_pwyb8q5oSO1uptadjo3_1280.jpg', 
     city: 'Singapore', 
     date: 'August 2019' 
     },
     {
-    image: 'insert link', 
+    image: 'https://66.media.tumblr.com/1c807df65d197462c19979238debc059/tumblr_ptelcr47gd1uptadjo4_1280.jpg', 
     city: 'Toronto, Canada', 
     date: 'August 2019' 
     }

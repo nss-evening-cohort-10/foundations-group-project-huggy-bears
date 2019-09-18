@@ -24,3 +24,21 @@ const albums = [
 const printToDom = (divId, toPrint) => {
 document.getElementById(divId).innerHTML = toPrint;
 }
+
+const prevTour = [ 
+    {
+    image: 'insert link', 
+    city: 'New York, New York', 
+    date: 'July 2019' 
+    },
+    {
+    image: 'insert link', 
+    city: 'Singapore', 
+    date: 'August 2019' 
+    },
+    {
+    image: 'insert link', 
+    city: 'Toronto, Canada', 
+    date: 'August 2019' 
+    }
+    ]

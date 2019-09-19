@@ -1,10 +1,5 @@
 
-
-
-
-
 const albums = [
-
     {
        albumName: 'Tech City',
        image:'img/MCT.png',
@@ -62,10 +57,10 @@ const albumscardBuilder = () => {
     <div class="card-body ">
       <h2 class="card-title">${albums[i].albumName}</h2>
       <p class="card-text">${albums[i].songs.join('<br>')}</p>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWTTthpScXd3v"type="button" class="btn btn-primary spotify">Spotify</a>
+      <a href="https://music.amazon.com/home" type="button" class="btn btn-secondary purchase">Purchase</a>
     </div>
   </div> 
-  <button type="button" class="btn btn-primary spotify">Spotify</button>
-  <button  type="button" class="btn btn-secondary purchase">Purchase</button>
   </div>`;
   if(i % 2 === 1){
     domString += `</div>`;
@@ -82,25 +77,5 @@ albumscardBuilder();
 
 
 
-// const playEvents = () => {
-//   const bandAlbums = document.getElementsByClassName('album-cards');
-//   for(let i=0; i<bandAlbums.length; i++){
-//     bandAlbums[i].addEventListener('click', albumClick);
-//   }
-// };
-// playEvents();
 
 
-
-// Sorting Hat
-// const removeCard = () =>{
-//   const cardsToRemove = document.getElementsByClassName('expel');
-//   for (let i =0;i<cardsToRemove.length;i++){
-//     const deleteMe = cardsToRemove[i];
-//     deleteMe.addEventListener('click' ,(e) =>{
-//       const btnClicked = e.target;
-//       const cardToRemove = btnClicked.parentNode.parentNode;
-//       cardToRemove.remove();
-//     })
-//   }
-// };

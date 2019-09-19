@@ -1,7 +1,9 @@
 body {
-    background-color: gainsboro;
+    background-color: black;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
+<<<<<<< HEAD
 .navbar{
     background-color: black;
     border-top: 1px solid white;
@@ -23,4 +25,30 @@ body {
 }
 .name-and-social-media a{
     text-decoration: underline;
+=======
+
+#mainHeader {
+    font-family: 'Monoton', cursive;
+    font-size: 70px;
+}
+
+#magazineReview {
+    font-size: 20px;
+}
+
+.hite {
+    height: 530px;
+}
+
+#prevTour {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.multi {
+    background-color: gainsboro;
+    margin: 20px;
+>>>>>>> master
 }

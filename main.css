@@ -1,5 +1,6 @@
 body {
-    background-color: gainsboro;
+    background-color: black;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -49,4 +50,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#magazineReview {
+    font-size: 20px;
+}
+
+.hite {
+    height: 530px;
 }

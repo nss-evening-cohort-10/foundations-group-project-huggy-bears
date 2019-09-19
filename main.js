@@ -85,6 +85,7 @@ const albums = [
        songs: ['test song1', 'test song 2','test song 3']
     }];
 
+    
 const prevTour = [ 
     {
     image: 'https://66.media.tumblr.com/834e49bf932ba8de2a8aa1ed80e081d0/tumblr_pwyb8q5oSO1uptadjo1_1280.jpg', 

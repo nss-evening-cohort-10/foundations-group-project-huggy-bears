@@ -3,15 +3,14 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-<<<<<<< HEAD
-.navbar{
+.this-is-navbar{
     background-color: black;
     border-top: 1px solid white;
 }
-.navbar-brand{
+.huggy-bears-navbar-brand{
     font-size: 20px;    
 }
-.card-container{
+.huggy-bears-card-container{
     margin:5px;
     padding: 5px;
 }
@@ -25,7 +24,7 @@ body {
 }
 .name-and-social-media a{
     text-decoration: underline;
-=======
+}
 
 #mainHeader {
     font-family: 'Monoton', cursive;
@@ -50,5 +49,4 @@ body {
 .multi {
     background-color: gainsboro;
     margin: 20px;
->>>>>>> master
 }

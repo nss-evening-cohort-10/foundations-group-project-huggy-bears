@@ -19,7 +19,7 @@ var memberCardBuilder = (memArr)=>{
     for (let i = 0; i < memArr.length; i++) {
         const element = members[i];
         domString += `  <div class = "col-6">
-                        <div class="card card-container">
+                        <div class="card huggy-bears-card-container">
                         <img src="${element.Image}" class="card-img-top card-img" alt="...">
                         <div class="card-body">
                         <div class="name-and-social-media    text-center">
@@ -33,15 +33,17 @@ var memberCardBuilder = (memArr)=>{
     domString += '</div>';
     printToDom('members-container', domString);
 }
-const attachNavbarEvent = ()=>{
-    document.getElementById('membersButton').addEventListener('click', ()=>{
-        memberCardBuilder(members);
-    })
-}
-const init = (e)=>{
-    attachNavbarEvent();
-};
-init(); 
+
+memberCardBuilder(members);
+// const attachNavbarEvent = ()=>{
+//     document.getElementById('membersButton').addEventListener('click', ()=>{
+//         memberCardBuilder(members);
+//     })
+// }
+// const init = (e)=>{
+//     attachNavbarEvent();
+// };
+// init(); 
 
 const albums = [
 

@@ -38,4 +38,15 @@ body {
 
 .play,.purchase{
     margin: 10px;
+  
+#prevTour {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.multi {
+    background-color: gainsboro;
+    margin: 20px;
 }

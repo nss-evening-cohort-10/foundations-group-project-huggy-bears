@@ -1,7 +1,29 @@
 body {
-    background-color: black;
+    /* background-color: black;  */
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+.this-is-navbar{
+    background-color: black;
+    border-top: 1px solid white;
+}
+.huggy-bears-navbar-brand{
+    font-size: 20px;    
+}
+.huggy-bears-card-container{
+    margin:5px;
+    padding: 5px;
+}
+.card-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.name-and-social-media a{
+    text-decoration: underline;
 }
 
 #footer {
@@ -60,6 +82,28 @@ body {
     height: 530px;
 }
 
+.card-text,.card-title{
+    color: black;
+}
+
+.album-cards{
+    height: auto;
+    width: auto;
+    padding: 25px;
+}
+
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.play,.purchase{
+    margin: 10px;
+  
 #prevTour {
     color: black;
     display: flex;

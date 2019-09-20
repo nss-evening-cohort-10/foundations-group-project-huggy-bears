@@ -62,30 +62,124 @@ document.getElementById('tour').addEventListener('click', () => {
 tourLoopBuilder(upcomingTours);
 });
 
+const members = [{  Name: 'Gabe',
+                    Image:'https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg',
+                    socialMedia:'https://www.twitter.com'},
+                {   Name: 'maggy',
+                    Image:'https://media.gettyimages.com/photos/spring-field-picture-id539016480?s=612x612',
+                    socialMedia:'https://www.instagram.com'},
+                {   Name: 'Raymond',
+                    Image:'./images/raymond.png',
+                    socialMedia:'https://www.twitter.com'},
+                {   Name: 'Yitbarek',
+                    Image:'./images/yitbarek.jpg',
+                    socialMedia:'https://www.facebook.com'}];
+
+const printToDom = (divId, toPrint)=>{
+    document.getElementById(divId).innerHTML = toPrint;
+}
+var memberCardBuilder = (memArr)=>{
+    let domString = '<div class="row">';
+    for (let i = 0; i < memArr.length; i++) {
+        const element = members[i];
+        domString += `  <div class = "col-6">
+                        <div class="card huggy-bears-card-container">
+                        <img src="${element.Image}" class="card-img-top card-img" alt="...">
+                        <div class="card-body">
+                        <div class="name-and-social-media    text-center">
+                            <label class="card-title">${element.Name}</label>
+                            <a href ="${element.socialMedia}" class="social-media-link target = "_blank" class="btn btn-primary btn-social-media">Social Media</a>
+                        </div>
+                        </div>
+                     </div>
+                    </div>`;
+    }
+    domString += '</div>';
+    printToDom('members-container', domString);
+}
+
+memberCardBuilder(members);
+// const attachNavbarEvent = ()=>{
+//     document.getElementById('membersButton').addEventListener('click', ()=>{
+//         memberCardBuilder(members);
+//     })
+// }
+// const init = (e)=>{
+//     attachNavbarEvent();
+// };
+// init(); 
+
 const albums = [
 
+const albums = [
     {
        albumName: 'Tech City',
-       image:'img/img_placeholder.png',
-       songs: ['Born In America', 'test song 2','test song 3']
+       image:'img/MCT.png',
+       songs: ["Nashville Yards", "Dev Heights","Who's Hiring"],
+       id: 'album1',
     },
     {
-      albumName: 'Boots Who',
-      image:'img/img_placeholder.png',
-      songs: ['test song1', 'test song 2','test song 3']  
+      albumName: 'Bootstrap',
+      image:'img/Bootstrap.png',
+      songs: ['Nav Bar', 'Buttons','Jumbotron'] ,
+      id: 'album2', 
     },
     {
-      albumName: 'Safari Survives',
-      image:'img/img_placeholder.png',
-      songs: ['test song1', 'test song 2','test song 3']
+      albumName: 'Safari',
+      image:'img/safari.jpeg',
+      songs: ['Lonely', 'Google Who','Better than Yahoo'],
+      id: 'album3',
     },
     {
-      albumName: 'Bezos Wins',
-       image:'img/img_placeholder.png',
-       songs: ['test song1', 'test song 2','test song 3']
+      albumName: 'Alphabet Inc.',
+       image:'img/Google.jpeg',
+       songs: ['Google It', 'We are the Champions','Never Gonna Quit'],
+       id: 'album4',
+    },
+    {
+      albumName: 'Apple',
+      image:'img/apple.jpeg',
+      songs: ['Touch Screen', 'iPhone','Siri'],
+      id: 'album5',
+    },
+    {
+      albumName: 'Bezos',
+       image:'img/download.png',
+       songs: ['Ruler of Tech', 'Pioneer','AWS'],
+       id: 'album6',
     }];
 
-    
+const printToDom = (divId, toPrint) => {
+document.getElementById(divId).innerHTML = toPrint;
+}
+
+const albumscardBuilder = () => {
+  let domString = '';
+  for(let i =0;i<albums.length;i++){
+    if(i % 2 === 0){
+      domString += `<div class="row">`
+    }
+    let album= albums[i];
+  domString +=`
+  <div class="album-cards text-center col-6 ${albums[i].id}">
+  <div class="card" >
+  <img src="${albums[i].image}" class="card-img-top image rounded" alt="...">
+    <div class="card-body ">
+      <h2 class="card-title">${albums[i].albumName}</h2>
+      <p class="card-text">${albums[i].songs.join('<br>')}</p>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWTTthpScXd3v"type="button" class="btn btn-primary spotify">Spotify</a>
+      <a href="https://music.amazon.com/home" type="button" class="btn btn-secondary purchase">Purchase</a>
+    </div>
+  </div> 
+  </div>`;
+  if(i % 2 === 1){
+    domString += `</div>`;
+  }
+}
+  printToDom('albumsDiv',domString);
+};
+albumscardBuilder();
+
 const prevTour = [ 
     {
     image: 'https://66.media.tumblr.com/834e49bf932ba8de2a8aa1ed80e081d0/tumblr_pwyb8q5oSO1uptadjo1_1280.jpg', 
@@ -122,4 +216,3 @@ const prevTourCardBuilder = (arr) => {
 }
 
 prevTourCardBuilder(prevTour);
-

@@ -48,7 +48,7 @@ const tourLoopBuilder = (cardData) => {
                   <h5 class="card-title">${cardData[i].cityAndState}</h5>
                   <p class="card-text">${cardData[i].date}</p>
                   <p class="card-text d-inline">${cardData[i].venue}</p>
-                  <a href="${cardData[i].tickets}" role="button" class="btn btn-primary" id="tixFloat">Purchase Tickets</a> 
+                  <a href="${cardData[i].tickets}" role="button" class="btn btn-primary" target="_blank" id="tixFloat">Purchase Tickets</a> 
                 </div>
               </div>
             </div>
@@ -58,9 +58,43 @@ const tourLoopBuilder = (cardData) => {
   printToDom('cardArea', tourdom)
 }
 
-document.getElementById('tour').addEventListener('click', () => {
 tourLoopBuilder(upcomingTours);
-});
+
+const newsletter = () => {
+	if (nameNewsletter.value === '') {
+	return alert("Please enter name and email into appropriate fields")
+	} else {
+	let name = document.getElementById('nameNewsletter').value;
+  let string = '';
+  string += `
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sweet Success!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for signing up for our newsletter, ${name}! You rock!</p>
+      </div>
+      <div class="modal-body">
+      	<img class="card-img-top" src="https://media3.giphy.com/media/l46CDHTqbmnGZyxKo/giphy.gif">
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+  `
+  printToDom('modal', string);
+  nameNewsletter.value = '';
+  emailNewsletter.value = '';
+}}
+
+document.getElementById('submit').addEventListener('click', newsletter);
 
 const albums = [
 
@@ -85,6 +119,9 @@ const albums = [
        songs: ['test song1', 'test song 2','test song 3']
     }];
 
+const printer = (divId, toPrint) => {
+    document.getElementById(divId).innerHTML = toPrint;
+    }
     
 const prevTour = [ 
     {
@@ -118,7 +155,7 @@ const prevTourCardBuilder = (arr) => {
         </div>
       `
     }
-    printToDom('prevTour', domString);
+    printer('prevTour', domString);
 }
 
 prevTourCardBuilder(prevTour);

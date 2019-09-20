@@ -9,10 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/d5d9e35974.js"></script>
+    <link rel="icon" href="https://m.pnglot.com/pngfile/small/28-288228_music-icons-guitar-rock-band-guitar-symbol.png">
+
 </head>
 <body>
-    <h1 id="mainHeader" class="text-center">Huggy Bears</h1>
+  <h1 id="mainHeader" class="text-center">Huggy Bears</h1>
 
+  <nav class="navbar this-is-navbar navbar-dark bg-dark d-flex justify-content-center navbar-container">
+    <a class="navbar-brand huggy-bears-navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="./members.html">Members</a>
+      <a class="navbar-brand" href="./tour.html">Tour</a>
+      <a class="navbar-brand" href="./jams.html">Jams</a>
+  </nav>
+    
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -36,7 +46,39 @@
     </div>
     
     <div id="prevTour"></div>
-     <p id="magazineReview" class="text-center grid col-10 offset-1">"In a time machine back to the eighties. The energy, the experience, the people -- of a different world." - Rolling Stones</p>
+    
+    <p id="magazineReview" class="text-center grid col-10 offset-1">"In a time machine back to the eighties. The energy, the experience, the people -- of a different world." - Rolling Stones</p>
+
+    <div id="modal"></div>
+
+<footer id="footer" class="container-fluid">
+    <div class="row">
+    <div class="col-sm-7">
+        <a href="https://facebook.com/" target="_blank" class="fab fa-facebook-square"></a>
+        <a href="https://instagram/" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://youtube.com/" target="_blank" class="fab fa-youtube-square"></a>
+        <a href="https://twitter.com/" target="_blank" class="fab fa-twitter-square"></a>
+    </div>
+    <div class="col-sm-5" id="newsletter">
+    <p>Receive our Newsletter</p>
+    <form>
+            <div class="row">
+              <div class="col">
+              <label for="nameNewsletter" class="sr-only">Student name</label>
+                <input type="text" class="form-control" placeholder="Name" id="nameNewsletter" required>
+              </div>
+              <div class="col">
+              
+                <input type="text" class="form-control" placeholder="Email" id="emailNewsletter" required>
+              </div>
+              <div class="col">
+                  <button type="button" data-toggle="modal" data-target="#exampleModal" id="submit">></button>
+              </div>
+            </div>
+          </form>
+</div>
+</div>
+</footer>
 
     <script src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

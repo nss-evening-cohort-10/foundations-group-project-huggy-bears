@@ -47,7 +47,7 @@ const tourLoopBuilder = (cardData) => {
                   <h5 class="card-title">${cardData[i].cityAndState}</h5>
                   <p class="card-text">${cardData[i].date}</p>
                   <p class="card-text d-inline">${cardData[i].venue}</p>
-                  <a href="${cardData[i].tickets}" role="button" class="btn btn-primary" id="tixFloat">Purchase Tickets</a> 
+                  <a href="${cardData[i].tickets}" role="button" class="btn btn-primary" target="_blank" id="tixFloat">Purchase Tickets</a> 
                 </div>
               </div>
             </div>

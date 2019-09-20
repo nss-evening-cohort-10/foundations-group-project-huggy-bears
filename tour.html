@@ -16,10 +16,18 @@
 <body>
     <h1 id="mainHeader" class="text-center">Huggy Bears</h1>
 
-    <button type="button" class="btn btn-primary" id="tour">Primary</button>
+    <nav class="navbar this-is-navbar navbar-dark bg-dark d-flex justify-content-center navbar-container">
+      <a class="navbar-brand huggy-bears-navbar-brand" href="./index.html">Home</a>
+      <a class="navbar-brand" href="./members.html">Members</a>
+      <a class="navbar-brand" href="#">Tour</a>
+      <a class="navbar-brand" href="./jams.html">Jams</a>
+  </nav>
+
 
     <div id="cardArea" class="d-block grid-col-6 offset-4"></div>
     
+    <div id="modal"></div>
+
 <footer id="footer" class="container-fluid">
     <div class="row">
     <div class="col-sm-7">
@@ -33,13 +41,15 @@
     <form>
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="Name">
+              <label for="nameNewsletter" class="sr-only">Student name</label>
+                <input type="text" class="form-control" placeholder="Name" id="nameNewsletter" required>
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Email">
+              
+                <input type="text" class="form-control" placeholder="Email" id="emailNewsletter" required>
               </div>
               <div class="col">
-                  <button type="submit">></button>
+                  <button type="button" data-toggle="modal" data-target="#exampleModal" id="submit">></button>
               </div>
             </div>
           </form>

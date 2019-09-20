@@ -100,10 +100,10 @@ body {
     width: 50%;
 }
 
-
-.play,.purchase{
+.play .purchase{
     margin: 10px;
-  
+}
+
 #prevTour {
     color: black;
     display: flex;
@@ -114,4 +114,8 @@ body {
 .multi {
     background-color: gainsboro;
     margin: 20px;
+}
+
+#modal {
+    color: #000;
 }

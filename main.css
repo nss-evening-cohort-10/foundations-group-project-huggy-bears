@@ -115,3 +115,7 @@ body {
     background-color: gainsboro;
     margin: 20px;
 }
+
+#modal {
+    color: #000;
+}

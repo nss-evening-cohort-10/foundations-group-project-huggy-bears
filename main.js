@@ -63,7 +63,7 @@ var memberCardBuilder = (memArr)=>{
                         <div class="card-body">
                         <div class="name-and-social-media    text-center">
                             <h4 class="card-title">${element.Name}</h4>
-                            <a href="${element.socialMedia}" target="_blank" class="fab fa-instagram"></a>
+                            <a href="${element.socialMedia}" role="button" class="btn btn-light spotify">Spotify</a>
                         </div>
                         </div>
                      </div>
@@ -173,37 +173,37 @@ const upcomingTours = [
   const albums = [
     {
        albumName: 'Tech City',
-       image:'images/MCT.png',
+       image:'https://66.media.tumblr.com/d8495e6eab5fc7fc61d25f83d4c52c9c/tumblr_pc0q5pUZw21uptadjo1_1280.jpg',
        songs: ["Nashville Yards", "Dev Heights","Who's Hiring"],
        id: 'album1',
     },
     {
       albumName: 'Bootstrap',
-      image:'images/Bootstrap.png',
+      image:'https://66.media.tumblr.com/887a691bc30079f4adecd08919205294/tumblr_pqhsreZix51uptadjo1_1280.jpg',
       songs: ['Nav Bar', 'Buttons','Jumbotron'] ,
       id: 'album2', 
     },
     {
       albumName: 'Safari',
-      image:'images/safari.jpeg',
+      image:'https://66.media.tumblr.com/686f1b841d3eaf84cb1cbef306d68012/tumblr_pnkaozoxXa1uptadjo1_1280.jpg',
       songs: ['Lonely', 'Google Who','Better than Yahoo'],
       id: 'album3',
     },
     {
       albumName: 'Alphabet Inc.',
-       image:'images/Google.jpeg',
+       image:'https://66.media.tumblr.com/47ad902778f30b0af636f5d0dfd7a230/tumblr_pi45o59eYI1uptadjo1_1280.jpg',
        songs: ['Google It', 'We are the Champions','Never Gonna Quit'],
        id: 'album4',
     },
     {
       albumName: 'Apple',
-      image:'images/apple.jpeg',
+      image:'https://66.media.tumblr.com/c8be6c3ebd433a64c08e553102bb5e5a/tumblr_pg4e6fDmZW1uptadjo2_1280.jpg',
       songs: ['Touch Screen', 'iPhone','Siri'],
       id: 'album5',
     },
     {
       albumName: 'Bezos',
-       image:'images/download.png',
+       image:'https://66.media.tumblr.com/7933187e9346c4b5228ffb4b7338542e/tumblr_peuy2ytEyW1uptadjo1_1280.png',
        songs: ['Ruler of Tech', 'Pioneer','AWS'],
        id: 'album6',
     }];
@@ -226,8 +226,8 @@ const albumscardBuilder = () => {
     <div class="card-body ">
       <h2 class="card-title">${albums[i].albumName}</h2>
       <p class="card-text">${albums[i].songs.join('<br>')}</p>
-      <a href="https://open.spotify.com/playlist/37i9dQZF1DWTTthpScXd3v" role="button" class="btn btn-primary spotify">Spotify</a>
-      <a href="https://music.amazon.com/home" role="button" class="btn btn-secondary purchase">Purchase</a>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWTTthpScXd3v" role="button" class="btn btn-light spotify">Spotify</a>
+      <a href="https://music.amazon.com/home" role="button" class="btn btn-light purchase">Purchase</a>
     </div>
   </div> 
   </div>`;

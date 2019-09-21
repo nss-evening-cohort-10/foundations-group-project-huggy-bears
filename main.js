@@ -50,9 +50,7 @@ const members = [{  Name: 'Gabe',
                     Image:'https://66.media.tumblr.com/9c5a36b9816a7c6cceedd21692c02971/tumblr_pmdcldYuc31uptadjo1_1280.jpg',
                     socialMedia:'https://www.instagram.com'}];
 
-// const printToDom = (divId, toPrint)=>{
-//     document.getElementById(divId).innerHTML = toPrint;
-// }
+
 var memberCardBuilder = (memArr)=>{
     let domString = '<div class="row">';
     for (let i = 0; i < memArr.length; i++) {
@@ -72,8 +70,6 @@ var memberCardBuilder = (memArr)=>{
     domString += '</div>';
     printToDom('members-container', domString);
 }
-
-
 
 const upcomingTours = [
   {
@@ -130,8 +126,6 @@ const upcomingTours = [
     printToDom('cardArea', tourdom)
   }
   
-  
-  
   const newsletter = () => {
     if (nameNewsletter.value === '' || emailNewsletter.value === '') {
     document.getElementById('modal').innerHTML = '';
@@ -167,9 +161,6 @@ const upcomingTours = [
     emailNewsletter.value = '';
   }}
   
-
-
-
   const albums = [
     {
        albumName: 'Tech City',
@@ -208,9 +199,6 @@ const upcomingTours = [
        id: 'album6',
     }];
 
-// const printToDom = (divId, toPrint) => {
-// document.getElementById(divId).innerHTML = toPrint;
-// }
 
 const albumscardBuilder = () => {
   let domString = '';
@@ -239,7 +227,6 @@ const albumscardBuilder = () => {
 };
 
 const init = () => {
-  console.log(document.URL.length);
   if (document.URL.includes('index') || document.URL.length === 22) {
     prevTourCardBuilder(prevTour);
     document.getElementById('submit').addEventListener('click', newsletter);

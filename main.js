@@ -174,37 +174,37 @@ const upcomingTours = [
   const albums = [
     {
        albumName: 'Tech City',
-       image:'img/MCT.png',
+       image:'images/MCT.png',
        songs: ["Nashville Yards", "Dev Heights","Who's Hiring"],
        id: 'album1',
     },
     {
       albumName: 'Bootstrap',
-      image:'img/Bootstrap.png',
+      image:'images/Bootstrap.png',
       songs: ['Nav Bar', 'Buttons','Jumbotron'] ,
       id: 'album2', 
     },
     {
       albumName: 'Safari',
-      image:'img/safari.jpeg',
+      image:'images/safari.jpeg',
       songs: ['Lonely', 'Google Who','Better than Yahoo'],
       id: 'album3',
     },
     {
       albumName: 'Alphabet Inc.',
-       image:'img/Google.jpeg',
+       image:'images/Google.jpeg',
        songs: ['Google It', 'We are the Champions','Never Gonna Quit'],
        id: 'album4',
     },
     {
       albumName: 'Apple',
-      image:'img/apple.jpeg',
+      image:'images/apple.jpeg',
       songs: ['Touch Screen', 'iPhone','Siri'],
       id: 'album5',
     },
     {
       albumName: 'Bezos',
-       image:'img/download.png',
+       image:'images/download.png',
        songs: ['Ruler of Tech', 'Pioneer','AWS'],
        id: 'album6',
     }];

@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#bigTime {
+    background: url("https://66.media.tumblr.com/7e28ec16191a894da3c51561496639c7/tumblr_pslid4P7NH1uptadjo1_1280.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
 .this-is-navbar{
     background-color: black;
     border-top: 1px solid white;
@@ -55,9 +60,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#mainHeader {
+#mainHeader a{
     font-family: 'Monoton', cursive;
     font-size: 70px;
+    color: white
+}
+
+#mainHeader a:hover {
+    text-decoration: none;
 }
 
 #tixFloat {

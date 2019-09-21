@@ -38,17 +38,17 @@ const prevTourCardBuilder = (arr) => {
 }
 
 const members = [{  Name: 'Gabe',
-                    Image:'https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg',
-                    socialMedia:'https://www.twitter.com'},
-                {   Name: 'maggy',
-                    Image:'https://media.gettyimages.com/photos/spring-field-picture-id539016480?s=612x612',
+                    Image:'https://66.media.tumblr.com/0ebbcc9fb4ec4c56fb8d21f55c653f5d/tumblr_prgf05Kua21uptadjo3_1280.jpg',
+                    socialMedia:'https://www.instagram.com'},
+                {   Name: 'Maggy',
+                    Image:'https://66.media.tumblr.com/bc009ade6c72ffc7f0a1e5d9abbc98ca/tumblr_pqwmhe1Cye1uptadjo3_1280.jpg',
                     socialMedia:'https://www.instagram.com'},
                 {   Name: 'Raymond',
-                    Image:'./images/raymond.png',
-                    socialMedia:'https://www.twitter.com'},
+                    Image:'https://66.media.tumblr.com/555321ceaf4d580ea4380137d0d93c41/tumblr_pi45hu61UB1uptadjo1_1280.jpg',
+                    socialMedia:'https://www.instagram.com'},
                 {   Name: 'Yitbarek',
-                    Image:'./images/yitbarek.jpg',
-                    socialMedia:'https://www.facebook.com'}];
+                    Image:'https://66.media.tumblr.com/9c5a36b9816a7c6cceedd21692c02971/tumblr_pmdcldYuc31uptadjo1_1280.jpg',
+                    socialMedia:'https://www.instagram.com'}];
 
 // const printToDom = (divId, toPrint)=>{
 //     document.getElementById(divId).innerHTML = toPrint;
@@ -57,13 +57,13 @@ var memberCardBuilder = (memArr)=>{
     let domString = '<div class="row">';
     for (let i = 0; i < memArr.length; i++) {
         const element = members[i];
-        domString += `  <div class = "col-6">
+        domString += `  <div class = "col-6 many">
                         <div class="card huggy-bears-card-container">
-                        <img src="${element.Image}" class="card-img-top card-img" alt="...">
+                        <img src="${element.Image}" class="card-img-top card-img edit-pic" alt="...">
                         <div class="card-body">
                         <div class="name-and-social-media    text-center">
-                            <label class="card-title">${element.Name}</label>
-                            <a href ="${element.socialMedia}" class="social-media-link target = "_blank" class="btn btn-primary btn-social-media">Social Media</a>
+                            <h4 class="card-title">${element.Name}</h4>
+                            <a href="${element.socialMedia}" target="_blank" class="fab fa-instagram"></a>
                         </div>
                         </div>
                      </div>

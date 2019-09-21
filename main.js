@@ -37,9 +37,6 @@ const prevTourCardBuilder = (arr) => {
     printToDom('prevTour', domString);
 }
 
-
-
-
 const members = [{  Name: 'Gabe',
                     Image:'https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg',
                     socialMedia:'https://www.twitter.com'},
@@ -115,10 +112,10 @@ const upcomingTours = [
         tourdom += `
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row no-gutters">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <img src="${cardData[i].cityImage}" class="card-img" alt="...">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">${cardData[i].cityAndState}</h5>
                     <p class="card-text">${cardData[i].date}</p>
@@ -136,7 +133,8 @@ const upcomingTours = [
   
   
   const newsletter = () => {
-    if (nameNewsletter.value === '') {
+    if (nameNewsletter.value === '' || emailNewsletter.value === '') {
+    document.getElementById('modal').innerHTML = '';
     return alert("Please enter name and email into appropriate fields")
     } else {
     let name = document.getElementById('nameNewsletter').value;
@@ -169,6 +167,7 @@ const upcomingTours = [
     emailNewsletter.value = '';
   }}
   
+
 
 
   const albums = [
@@ -227,8 +226,8 @@ const albumscardBuilder = () => {
     <div class="card-body ">
       <h2 class="card-title">${albums[i].albumName}</h2>
       <p class="card-text">${albums[i].songs.join('<br>')}</p>
-      <a href="https://open.spotify.com/playlist/37i9dQZF1DWTTthpScXd3v"type="button" class="btn btn-primary spotify">Spotify</a>
-      <a href="https://music.amazon.com/home" type="button" class="btn btn-secondary purchase">Purchase</a>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWTTthpScXd3v" role="button" class="btn btn-primary spotify">Spotify</a>
+      <a href="https://music.amazon.com/home" role="button" class="btn btn-secondary purchase">Purchase</a>
     </div>
   </div> 
   </div>`;
@@ -240,7 +239,8 @@ const albumscardBuilder = () => {
 };
 
 const init = () => {
-  if(document.URL.includes('index')) {
+  console.log(document.URL.length);
+  if (document.URL.includes('index') || document.URL.length === 22) {
     prevTourCardBuilder(prevTour);
     document.getElementById('submit').addEventListener('click', newsletter);
   } else if(document.URL.includes('members')) {

@@ -61,7 +61,7 @@ var memberCardBuilder = (memArr)=>{
                         <div class="card-body">
                         <div class="name-and-social-media    text-center">
                             <h4 class="card-title">${element.Name}</h4>
-                            <a href="${element.socialMedia}" role="button" class="btn btn-light spotify">Spotify</a>
+                            <a href="${element.socialMedia}" role="button" class="btn btn-light spotify">Instagram</a>
                         </div>
                         </div>
                      </div>
@@ -148,7 +148,7 @@ const upcomingTours = [
         </div>
         <div class="modal-body">
           <img class="card-img-top" src="https://media3.giphy.com/media/l46CDHTqbmnGZyxKo/giphy.gif">
-          </div>
+          </div
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
@@ -227,6 +227,7 @@ const albumscardBuilder = () => {
 };
 
 const init = () => {
+  console.log(document.URL.length)
   if (document.URL.includes('index') || document.URL.length === 22) {
     prevTourCardBuilder(prevTour);
     document.getElementById('submit').addEventListener('click', newsletter);

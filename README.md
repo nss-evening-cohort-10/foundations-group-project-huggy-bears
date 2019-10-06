@@ -3,7 +3,7 @@
 
 ## Description
 
-An application allowing users to view details about the band [Huggy Bears](https://www.killrockstars.com/artists/huggy-bear). A collaboration of four users utilizing git and github as a team.
+An application allowing users to view details about the band [Huggy Bears](https://www.killrockstars.com/artists/huggy-bear). This project represents an introduction to using git and github as a team.
 
 ## Technologies Used
 
@@ -14,28 +14,28 @@ An application allowing users to view details about the band [Huggy Bears](https
 ## Screenshot(s)
 
 Home Page Top
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/mainview.png)
 
 Home Page Bottom
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/mainview2.png)
 
 Members Page Top
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/members.png)
 
 Members Page Bottom
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/members2.png)
 
 Tour Page
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/tour.png)
 
 Jams Page Top
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/jams.png)
 
 Jams Page Bottom
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/jams2.png)
 
 Newsletter Modal
-![Main View](https://raw.githubusercontent.com/gseals/temp-converter/master/screenshots/Mainview.png)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/newsletterModal.png)
 
 
 ## Instructions for how to run the project

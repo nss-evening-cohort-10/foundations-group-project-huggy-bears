@@ -13,7 +13,7 @@ An application allowing users to view details about the band [Huggy Bears](https
 
 ## Screenshot(s)
 
-Home Page Top
+### Home Page Top
 ![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/mainview.png)
 
 Home Page Bottom

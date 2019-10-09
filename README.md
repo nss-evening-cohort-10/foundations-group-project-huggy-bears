@@ -17,25 +17,25 @@ An application allowing users to view details about the band [Huggy Bears](https
 ![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/mainview.png)
 
 ### Home Page Bottom
-![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/mainview2.png)
+![Main View bottom](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/mainview2.png)
 
 ### Members Page Top
-![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/members.png)
+![top of members page](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/members.png)
 
 ### Members Page Bottom
-![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/members2.png)
+![bottom of members page](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/members2.png)
 
 ### Tour Page
-![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/tour.png)
+![Mtour page](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/tour.png)
 
 ### Jams Page Top
-![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/jams.png)
+![top of jams page](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/jams.png)
 
 ### Jams Page Bottom
-![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/jams2.png)
+![bottom of jams page](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/jams2.png)
 
 ### Newsletter Modal
-![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/newsletterModal.png)
+![newsletter modal](https://raw.githubusercontent.com/nss-evening-cohort-10/foundations-group-project-huggy-bears/master/screenshots/newsletterModal.png)
 
 
 ## Instructions for how to run the project
